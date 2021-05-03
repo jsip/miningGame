@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mines</title>
+    <script src="/main.js" defer></script>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <main id="main">
+        <section>
+            <div class="info">
+                <h1>💣 Mines 💣</h1>
+                <div class="options">
+                    <div>
+                        <h3>Amount of mines</h3>
+                        <input type="number" id="mineAm" max="25" value="5">
+                    </div>
+                    <div>
+                        <h3>Bet amount</h3>
+                        <input type="number" id="betAm" value="1">
+                    </div>
+                </div>
+                <br><br>
+                <button onclick="startGame()">Play</button>
+                <br><br>
+                <h1>💲💲 <span id="balSpan"></span> 💲💲</h1>
+            </div>
+        </section>
+        <section>
+            <div id="container"></div>
+        </section>
+    </main>
+    <div id="gameOver">
+        <h1>game over u lost ur cash retard</h1>
+        <button onclick="resetUI()">ok</button>
+    </div>
+</body>
+
+</html>
